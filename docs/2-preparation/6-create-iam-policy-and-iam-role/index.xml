@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Create IAM Policy and IAM Role on Create a new AWS account.</title>
-    <link>https://truongdinhvukhanh.github.io/FCJ_Intern_2025/2-preparation/6-create-iam-policy-and-iam-role/</link>
+    <link>http://localhost:1313/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/6-create-iam-policy-and-iam-role/</link>
     <description>Recent content in Create IAM Policy and IAM Role on Create a new AWS account.</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://truongdinhvukhanh.github.io/FCJ_Intern_2025/2-preparation/6-create-iam-policy-and-iam-role/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/6-create-iam-policy-and-iam-role/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

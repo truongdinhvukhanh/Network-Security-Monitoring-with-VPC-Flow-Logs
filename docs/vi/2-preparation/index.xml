@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chuẩn bị on Tạo mới tài khoản AWS</title>
-    <link>https://truongdinhvukhanh.github.io/FCJ_Intern_2025/vi/2-preparation/</link>
+    <link>http://localhost:1313/Network-Security-Monitoring-with-VPC-Flow-Logs/vi/2-preparation/</link>
     <description>Recent content in Chuẩn bị on Tạo mới tài khoản AWS</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="https://truongdinhvukhanh.github.io/FCJ_Intern_2025/vi/2-preparation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/Network-Security-Monitoring-with-VPC-Flow-Logs/vi/2-preparation/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

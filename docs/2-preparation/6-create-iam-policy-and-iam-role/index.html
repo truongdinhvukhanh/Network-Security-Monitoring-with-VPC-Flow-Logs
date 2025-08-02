@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head>
+  <head><script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=Network-Security-Monitoring-with-VPC-Flow-Logs/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.134.2">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="/FCJ_Intern_2025/images/favicon.png" type="image/png">
+    <link rel="icon" href="/Network-Security-Monitoring-with-VPC-Flow-Logs/images/favicon.png" type="image/png">
 
     <title>Create IAM Policy and IAM Role :: Create a new AWS account.</title>
 
     
-    <link href="/FCJ_Intern_2025/css/nucleus.css?1754129085" rel="stylesheet">
-    <link href="/FCJ_Intern_2025/css/fontawesome-all.min.css?1754129085" rel="stylesheet">
-    <link href="/FCJ_Intern_2025/css/hybrid.css?1754129085" rel="stylesheet">
-    <link href="/FCJ_Intern_2025/css/featherlight.min.css?1754129085" rel="stylesheet">
-    <link href="/FCJ_Intern_2025/css/perfect-scrollbar.min.css?1754129085" rel="stylesheet">
-    <link href="/FCJ_Intern_2025/css/auto-complete.css?1754129085" rel="stylesheet">
-    <link href="/FCJ_Intern_2025/css/atom-one-dark-reasonable.css?1754129085" rel="stylesheet">
-    <link href="/FCJ_Intern_2025/css/theme.css?1754129085" rel="stylesheet">
-    <link href="/FCJ_Intern_2025/css/hugo-theme.css?1754129085" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/nucleus.css?1754130324" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/fontawesome-all.min.css?1754130324" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hybrid.css?1754130324" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/featherlight.min.css?1754130324" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/perfect-scrollbar.min.css?1754130324" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/auto-complete.css?1754130324" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/atom-one-dark-reasonable.css?1754130324" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme.css?1754130324" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hugo-theme.css?1754130324" rel="stylesheet">
     
-    <link href="/FCJ_Intern_2025/css/theme-workshop.css?1754129085" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme-workshop.css?1754130324" rel="stylesheet">
     
     
 
-    <script src="/FCJ_Intern_2025/js/jquery-3.3.1.min.js?1754129085"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery-3.3.1.min.js?1754130324"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/FCJ_Intern_2025/2-preparation/6-create-iam-policy-and-iam-role/">
+  <body class="" data-url="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/6-create-iam-policy-and-iam-role/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/FCJ_Intern_2025/js/lunr.min.js?1754129085"></script>
-<script type="text/javascript" src="/FCJ_Intern_2025/js/auto-complete.js?1754129085"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/lunr.min.js?1754130324"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/auto-complete.js?1754130324"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/truongdinhvukhanh.github.io\/FCJ_Intern_2025\/";
+        var baseurl = "http:\/\/localhost:1313\/Network-Security-Monitoring-with-VPC-Flow-Logs\/";
     
 </script>
-<script type="text/javascript" src="/FCJ_Intern_2025/js/search.js?1754129085"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/search.js?1754130324"></script>
 
     
   </div>
@@ -82,12 +82,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/1-introduction/" title="Introduction" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/1-introduction/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/1-introduction/">
            <b> 1. </b> Introduction
           
             <i class="fas fa-check read-icon"></i>
@@ -108,12 +108,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/2-preparation/" title="Preparation" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/" title="Preparation" class="dd-item 
         parent
         
         
         ">
-      <a href="/FCJ_Intern_2025/2-preparation/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/">
            <b> 2. </b> Preparation
           
             <i class="fas fa-check read-icon"></i>
@@ -139,12 +139,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/2-preparation/1-create-vpc/" title="Create VPC" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/1-create-vpc/" title="Create VPC" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/2-preparation/1-create-vpc/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/1-create-vpc/">
            <b> 2.1 </b> Create VPC
           
             <i class="fas fa-check read-icon"></i>
@@ -167,12 +167,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/2-preparation/2-create-subnets/" title="Create Subnets" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/2-create-subnets/" title="Create Subnets" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/2-preparation/2-create-subnets/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/2-create-subnets/">
            <b> 2.2 </b> Create Subnets
           
             <i class="fas fa-check read-icon"></i>
@@ -195,12 +195,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/2-preparation/3-create-internet-gateway/" title="Create Internet Gateway" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/3-create-internet-gateway/" title="Create Internet Gateway" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/2-preparation/3-create-internet-gateway/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/3-create-internet-gateway/">
            <b> 2.3 </b> Create Internet Gateway
           
             <i class="fas fa-check read-icon"></i>
@@ -223,12 +223,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/2-preparation/4-create-route-table/" title="Create Route Table" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/4-create-route-table/" title="Create Route Table" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/2-preparation/4-create-route-table/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/4-create-route-table/">
            <b> 2.4 </b> Create Route Table
           
             <i class="fas fa-check read-icon"></i>
@@ -251,12 +251,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/2-preparation/5-create-security-groups/" title="Create Security Groups" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/5-create-security-groups/" title="Create Security Groups" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/2-preparation/5-create-security-groups/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/5-create-security-groups/">
            <b> 2.5 </b> Create Security Groups
           
             <i class="fas fa-check read-icon"></i>
@@ -279,12 +279,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/2-preparation/6-create-iam-policy-and-iam-role/" title="Create IAM Policy and IAM Role" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/6-create-iam-policy-and-iam-role/" title="Create IAM Policy and IAM Role" class="dd-item 
         
         active
         
         ">
-      <a href="/FCJ_Intern_2025/2-preparation/6-create-iam-policy-and-iam-role/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/6-create-iam-policy-and-iam-role/">
            <b> 2.6 </b> Create IAM Policy and IAM Role
           
             <i class="fas fa-check read-icon"></i>
@@ -314,12 +314,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/3-create-ec2-bastion/" title="Create EC2 Bastion" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/3-create-ec2-bastion/" title="Create EC2 Bastion" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/3-create-ec2-bastion/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/3-create-ec2-bastion/">
            <b> 3. </b> Create EC2 Bastion
           
             <i class="fas fa-check read-icon"></i>
@@ -345,12 +345,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/3-create-ec2-bastion/1-launch-an-ec2-instance-as-a-bastion-host/" title="Launch an EC2 Instance as a Bastion Host" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/3-create-ec2-bastion/1-launch-an-ec2-instance-as-a-bastion-host/" title="Launch an EC2 Instance as a Bastion Host" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/3-create-ec2-bastion/1-launch-an-ec2-instance-as-a-bastion-host/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/3-create-ec2-bastion/1-launch-an-ec2-instance-as-a-bastion-host/">
            <b> 3.1 </b> Launch an EC2 Instance as a Bastion Host
           
             <i class="fas fa-check read-icon"></i>
@@ -373,12 +373,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/3-create-ec2-bastion/2-connect-to-the-bastion-host-via-ssh/" title="Connect to the Bastion Host via SSH" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/3-create-ec2-bastion/2-connect-to-the-bastion-host-via-ssh/" title="Connect to the Bastion Host via SSH" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/3-create-ec2-bastion/2-connect-to-the-bastion-host-via-ssh/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/3-create-ec2-bastion/2-connect-to-the-bastion-host-via-ssh/">
            <b> 3.2 </b> Connect to the Bastion Host via SSH
           
             <i class="fas fa-check read-icon"></i>
@@ -408,12 +408,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/4-create-s3-bucket/" title="Create S3 Bucket" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/4-create-s3-bucket/" title="Create S3 Bucket" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/4-create-s3-bucket/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/4-create-s3-bucket/">
            <b> 4. </b> Create S3 Bucket
           
             <i class="fas fa-check read-icon"></i>
@@ -434,12 +434,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/5-create-and-configure-opensearch-service/" title="Create and configure OpenSearch Service" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/5-create-and-configure-opensearch-service/" title="Create and configure OpenSearch Service" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/5-create-and-configure-opensearch-service/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/5-create-and-configure-opensearch-service/">
            <b> 5. </b> Create and configure OpenSearch Service
           
             <i class="fas fa-check read-icon"></i>
@@ -465,12 +465,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/5-create-and-configure-opensearch-service/1-create-opensearch-service-domain/" title="Create OpenSearch Service Domain" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/5-create-and-configure-opensearch-service/1-create-opensearch-service-domain/" title="Create OpenSearch Service Domain" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/5-create-and-configure-opensearch-service/1-create-opensearch-service-domain/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/5-create-and-configure-opensearch-service/1-create-opensearch-service-domain/">
            <b> 5.1 </b> Create OpenSearch Service Domain
           
             <i class="fas fa-check read-icon"></i>
@@ -493,12 +493,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/5-create-and-configure-opensearch-service/2-create-ingest-pipeline/" title="Create the Ingest Pipeline" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/5-create-and-configure-opensearch-service/2-create-ingest-pipeline/" title="Create the Ingest Pipeline" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/5-create-and-configure-opensearch-service/2-create-ingest-pipeline/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/5-create-and-configure-opensearch-service/2-create-ingest-pipeline/">
            <b> 5.2 </b> Create the Ingest Pipeline
           
             <i class="fas fa-check read-icon"></i>
@@ -528,12 +528,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/6-create-kinesis-data-firehose/" title="Create Kinesis Data Firehose" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/6-create-kinesis-data-firehose/" title="Create Kinesis Data Firehose" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/6-create-kinesis-data-firehose/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/6-create-kinesis-data-firehose/">
            <b> 6. </b> Create Kinesis Data Firehose
           
             <i class="fas fa-check read-icon"></i>
@@ -554,12 +554,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/7-create-vpc-flow-log/" title="Create VPC Flow Log" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/7-create-vpc-flow-log/" title="Create VPC Flow Log" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/7-create-vpc-flow-log/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/7-create-vpc-flow-log/">
            <b> 7. </b> Create VPC Flow Log
           
             <i class="fas fa-check read-icon"></i>
@@ -580,12 +580,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/8-verify-data-flow-and-create-dashboard/" title="Verify data flow and create Dashboard" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/" title="Verify data flow and create Dashboard" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/8-verify-data-flow-and-create-dashboard/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/">
            <b> 8. </b> Verify data flow and create Dashboard
           
             <i class="fas fa-check read-icon"></i>
@@ -611,12 +611,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/" title="Verify data flow" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/" title="Verify data flow" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/">
            <b> 8.1 </b> Verify data flow
           
             <i class="fas fa-check read-icon"></i>
@@ -639,12 +639,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/8-verify-data-flow-and-create-dashboard/2-create-dashboard/" title="Create Dashboard" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/2-create-dashboard/" title="Create Dashboard" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/8-verify-data-flow-and-create-dashboard/2-create-dashboard/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/2-create-dashboard/">
            <b> 8.2 </b> Create Dashboard
           
             <i class="fas fa-check read-icon"></i>
@@ -674,12 +674,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/9-query-logs-with-athena/" title="Query logs with Athena" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/9-query-logs-with-athena/" title="Query logs with Athena" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/9-query-logs-with-athena/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/9-query-logs-with-athena/">
            <b> 9. </b> Query logs with Athena
           
             <i class="fas fa-check read-icon"></i>
@@ -700,12 +700,12 @@
  
   
     
-    <li data-nav-id="/FCJ_Intern_2025/10-clean-up-resources/" title="Clean up resources" class="dd-item 
+    <li data-nav-id="/Network-Security-Monitoring-with-VPC-Flow-Logs/10-clean-up-resources/" title="Clean up resources" class="dd-item 
         
         
         
         ">
-      <a href="/FCJ_Intern_2025/10-clean-up-resources/">
+      <a href="/Network-Security-Monitoring-with-VPC-Flow-Logs/10-clean-up-resources/">
            <b> 10. </b> Clean up resources
           
             <i class="fas fa-check read-icon"></i>
@@ -757,7 +757,7 @@
                   
                     
                     
-                      <option id="en" value="https://truongdinhvukhanh.github.io/FCJ_Intern_2025/2-preparation/6-create-iam-policy-and-iam-role/" selected>English</option>
+                      <option id="en" value="http://localhost:1313/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/6-create-iam-policy-and-iam-role/" selected>English</option>
                     
                   
               
@@ -771,7 +771,7 @@
                   
                     
                     
-                      <option id="vi" value="https://truongdinhvukhanh.github.io/FCJ_Intern_2025/vi/2-preparation/6-create-iam-policy-and-iam-role/">Tiếng Việt</option>
+                      <option id="vi" value="http://localhost:1313/Network-Security-Monitoring-with-VPC-Flow-Logs/vi/2-preparation/6-create-iam-policy-and-iam-role/">Tiếng Việt</option>
                     
                   
               
@@ -861,7 +861,7 @@
             
           
           
-            <a href='/FCJ_Intern_2025/'>Network Security Monitoring with VPC Flow Logs</a> > <a href='/FCJ_Intern_2025/2-preparation/'>Preparation</a> > Create IAM Policy and IAM Role
+            <a href='/Network-Security-Monitoring-with-VPC-Flow-Logs/'>Network Security Monitoring with VPC Flow Logs</a> > <a href='/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/'>Preparation</a> > Create IAM Policy and IAM Role
           
         
           
@@ -1477,10 +1477,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/FCJ_Intern_2025/2-preparation/5-create-security-groups/" title="Create Security Groups"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/Network-Security-Monitoring-with-VPC-Flow-Logs/2-preparation/5-create-security-groups/" title="Create Security Groups"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/FCJ_Intern_2025/3-create-ec2-bastion/" title="Create EC2 Bastion" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/Network-Security-Monitoring-with-VPC-Flow-Logs/3-create-ec2-bastion/" title="Create EC2 Bastion" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1490,19 +1490,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/FCJ_Intern_2025/js/clipboard.min.js?1754129085"></script>
-    <script src="/FCJ_Intern_2025/js/perfect-scrollbar.min.js?1754129085"></script>
-    <script src="/FCJ_Intern_2025/js/perfect-scrollbar.jquery.min.js?1754129085"></script>
-    <script src="/FCJ_Intern_2025/js/jquery.sticky.js?1754129085"></script>
-    <script src="/FCJ_Intern_2025/js/featherlight.min.js?1754129085"></script>
-    <script src="/FCJ_Intern_2025/js/highlight.pack.js?1754129085"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/clipboard.min.js?1754130324"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.min.js?1754130324"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.jquery.min.js?1754130324"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery.sticky.js?1754130324"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/featherlight.min.js?1754130324"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/highlight.pack.js?1754130324"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/FCJ_Intern_2025/js/modernizr.custom-3.6.0.js?1754129085"></script>
-    <script src="/FCJ_Intern_2025/js/learn.js?1754129085"></script>
-    <script src="/FCJ_Intern_2025/js/hugo-learn.js?1754129085"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/modernizr.custom-3.6.0.js?1754130324"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/learn.js?1754130324"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/hugo-learn.js?1754130324"></script>
 
-    <link href="/FCJ_Intern_2025/mermaid/mermaid.css?1754129085" rel="stylesheet" />
-    <script src="/FCJ_Intern_2025/mermaid/mermaid.js?1754129085"></script>
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.css?1754130324" rel="stylesheet" />
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.js?1754130324"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
