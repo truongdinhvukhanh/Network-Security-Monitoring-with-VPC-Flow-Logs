@@ -14,7 +14,7 @@ In this section, you will create and configure an Amazon Kinesis Data Firehose d
 1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/)
     - In the search bar, type `Firehose`
     - Select **Amazon Data Firehose** from the services list    
-    ![image.png](/images/6/image.png)    
+    ![image.png](../../images/6/image.png)    
 2. Create Firehose stream
     - Select **Firehose streams** from the left navigation pane
     - Click **Create Firehose stream**    
