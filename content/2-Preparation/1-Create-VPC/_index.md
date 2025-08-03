@@ -18,17 +18,17 @@ Creating an Amazon Virtual Private Cloud (VPC) is the foundational step for this
 2. Initiate VPC creation:
     - Select **Your VPCs** from the left navigation panel
     - Click on **Create VPC** button in the top-right corner
-    ![image.png](image 1.png)
+    ![image.png](image%201.png)
 3. Configure your VPC settings:
     - Under **Resources to create**, select **VPC only**
     - Enter **Name tag**:  `NSM-VPC`
     - Set **IPv4 CIDR block**: `10.0.0.0/16`
-    ![image.png](image 2.png)
+    ![image.png](image%202.png)
 4. Complete the VPC creation:
     - Review your settings
     - Click **Create VPC**
-    ![image.png](image 3.png)
+    ![image.png](image%203.png)
 5. Verify successful VPC creation:
     - You should see a success message
     - Your new VPC will appear in the VPC list
-    ![image.png](image 4.png)
+    ![image.png](image%204.png)
