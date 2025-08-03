@@ -13,47 +13,47 @@ In this step, you will create your Amazon OpenSearch Service domain. This domain
 1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/)
     - In the search bar, type `Amazon OpenSearch Service`
     - Select **Amazon OpenSearch Service** from the services list    
-    ![image.png](/images/5/5.1/image.png)    
+    ![image.png](../images/5/5.1/image.png)    
 - Click **Create domain** to begin    
-    ![image.png](/images/5/5.1/image%201.png)    
+    ![image.png](../images/5/5.1/image%201.png)    
 1. Domain Configuration
     - **Domain name:** Enter `nsm-opensearch`
     - **Domain creation method:** Select **Standard create**
     - **Templates:** Select **Dev/test** (for lab environment)        
-        ![image.png](/images/5/5.1/image%202.png)        
+        ![image.png](../images/5/5.1/image%202.png)        
     - **Deployment option(s):** Select **Domain without standby** (sufficient for lab purposes)
     - **Availability Zone(s):** Select **1-AZ**
     - **Version:** Select the latest OpenSearch version available (e.g., OpenSearch 2.19)        
-        ![image.png](/images/5/5.1/image%203.png)        
+        ![image.png](../images/5/5.1/image%203.png)        
 2. Number of data nodes
     - **Instance family:** Select **General purpose** from the dropdown
     - **Instance type:** Select **t3.small.search** (sufficient for lab purposes)
     - **Number of data nodes:** Set to 1 (for lab environment)        
-        ![image.png](/images/5/5.1/image%204.png)        
+        ![image.png](../images/5/5.1/image%204.png)        
     - **Storage type:** Select **EBS**
     - **Volume type:** General Purpose (SSD) - gp3
     - **Storage size per node:** 10 GiB        
-        ![image.png](/images/5/5.1/image%205.png)        
+        ![image.png](../images/5/5.1/image%205.png)        
 3. Network Configuration
     - **Network:** Select **VPC access**
     - **IP address type:** Select **IPv4 only**
     - **VPC:** Select your **NSM-VPC** from the dropdown
     - **Subnets:** Select **NSM-Private-Subnet**
     - Sec**urity groups:** Select **SG-OpenSearch**    
-    ![image.png](/images/5/5.1/image%206.png)    
+    ![image.png](../images/5/5.1/image%206.png)    
 4. **Fine-grained access control**
     - Uncheck **Enable fine-grained access control**    
-    ![image.png](/images/5/5.1/image%207.png)    
+    ![image.png](../images/5/5.1/image%207.png)    
 5. **Access policy:**
     - Select **Configure domain level access policy**
     - Action: Select **Allow**    
-    ![image.png](/images/5/5.1/image%208.png)    
+    ![image.png](../images/5/5.1/image%208.png)    
 6. Review and Create
     - Review all settings to ensure they match your requirements
     - Click **Create** to initiate domain creation    
-    ![image.png](/images/5/5.1/image%209.png)    
+    ![image.png](../images/5/5.1/image%209.png)    
     - Wait for the domain status to change to **Active** (this may take 15-20 minutes)    
-    ![image.png](/images/5/5.1/image%2010.png)    
+    ![image.png](../images/5/5.1/image%2010.png)    
     - Copy **OpenSearch Dashboards URL** (without `https://` and `/_dashboards`)        
-        ![image.png](/images/5/5.1/image%2011.png)        
-        ![image.png](/images/5/5.1/image%2012.png)
+        ![image.png](../images/5/5.1/image%2011.png)        
+        ![image.png](../images/5/5.1/image%2012.png)

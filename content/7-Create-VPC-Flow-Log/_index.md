@@ -13,18 +13,18 @@ In this section, you will configure VPC Flow Logs to capture detailed informatio
 #### Creating a VPC Flow Log for Network Monitoring
 1. Navigate to the [AWS Management Console](https://aws.amazon.com/console/)
     - In the search bar, find and select **VPC**    
-    ![image.png](/images/7/image.png)    
+    ![image.png](../images/7/image.png)    
 2. Create flow log
     - Select your **NSM-VPC**
     - Choose the **Flow logs** tab
     - Click **Create flow log**    
-    ![image.png](/images/7/image%201.png)    
+    ![image.png](../images/7/image%201.png)    
 3. Configure the flow log:
     - **Filter**: All (captures all traffic)
     - **Maximum aggregation interval:** 1 minute
     - **Destination**: Send to Amazon Data Firehose in the same account
     - **Firehose delivery stream:** Select **NSM-FlowLogs-Firehose** from the dropdown
     - **Log format:** AWS default format
-    ![image.png](/images/7/image%202.png)    
+    ![image.png](../images/7/image%202.png)    
 4. Click **Create flow log**
-    ![image.png](/images/7/image%203.png)
+    ![image.png](../images/7/image%203.png)

@@ -14,32 +14,32 @@ Trong phần này, bạn sẽ tạo một Amazon S3 (Simple Storage Service) buc
 1. Đăng nhập vào AWS Management Console
     - Trong thanh tìm kiếm, gõ **S3**
     - Chọn **S3** từ danh sách dịch vụ
-    ![image.png](/images/4/image.png)
+    ![image.png](../images/4/image.png)
 2. Trong giao diện **S3**, chọn **Create bucket**
-    ![image.png](/images/4/image%201.png)
+    ![image.png](../images/4/image%201.png)
 3. Trong giao diện **Create bucket**
     - **Bucket type:** Chọn **General purpose**
     - **Bucket name**: Gõ `nsm-flow-logs-YYYYMMDD` (thay thế YYYYMMDD bằng ngày hôm nay để đảm bảo tính duy nhất)
-    ![image.png](/images/4/image%202.png)
+    ![image.png](../images/4/image%202.png)
 4. Nhấp **Create bucket**
-    ![image.png](/images/4/image%203.png)
-    ![image.png](/images/4/image%204.png)
+    ![image.png](../images/4/image%203.png)
+    ![image.png](../images/4/image%204.png)
 #### Tạo Cấu trúc Thư mục để Lưu trữ Dữ liệu có Tổ chức
 1. Chọn bucket mới tạo của bạn
-    ![image.png](/images/4/image%205.png)
+    ![image.png](../images/4/image%205.png)
 2. Cuộn xuống và nhấp **Create folder**
-    ![image.png](/images/4/image%206.png)
+    ![image.png](../images/4/image%206.png)
 3. Tạo các thư mục sau:
     - `flow-logs` (cho dữ liệu VPC Flow Logs)
-    ![image.png](/images/4/image%207.png)
+    ![image.png](../images/4/image%207.png)
     - `athena-results` (để lưu trữ kết quả truy vấn Athena)
-    ![image.png](/images/4/image%208.png)
+    ![image.png](../images/4/image%208.png)
 4. Xác minh hai thư mục đã được tạo thành công
-    ![image.png](/images/4/image%209.png)
+    ![image.png](../images/4/image%209.png)
 #### Cấu hình Bucket Policy cho Firehose Access
 1. Chuyển đến tab **Permissions**
 2. Cuộn xuống **Bucket policy** và nhấp **Edit**
-    ![image.png](/images/4/image%2010.png)
+    ![image.png](../images/4/image%2010.png)
 3. Sao chép và dán policy sau, thay thế các phần giữ chỗ:
     ```json
     {
@@ -99,6 +99,6 @@ Trong phần này, bạn sẽ tạo một Amazon S3 (Simple Storage Service) buc
     - `nsm-flow-logs-YYYYMMDD` bằng tên bucket thực tế của bạn (4 vị trí)
     - `YOUR-ACCOUNT-ID` bằng ID tài khoản AWS của bạn (tìm thấy ở góc trên bên phải của AWS console)
     - Đảm bảo khu vực phù hợp với thiết lập của bạn (us-east-1 trong ví dụ này)
-    ![image.png](/images/4/image%2011.png)
+    ![image.png](../images/4/image%2011.png)
 4. Nhấp **Save changes**
-    ![image.png](/images/4/image%2012.png)
+    ![image.png](../images/4/image%2012.png)

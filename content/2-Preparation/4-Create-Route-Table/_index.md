@@ -15,36 +15,36 @@ In this lab, configuring a Route Table is vital for directing traffic to and fro
     - Navigate to the **VPC** console
     - Select **Route Tables** from the left navigation panel
     - Click **Create route table**
-    ![image.png](/images/2/2.4/image.png)
+    ![image.png](../images/2/2.4/image.png)
 2. Configure your Route Table:
     - Enter **Name**: `NSM-Public-RT`
     - Select **VPC**: Choose the **NSM-VPC** from the dropdown
     - Click **Create route table**    
-    ![image.png](/images/2/2.4/image%201.png)    
+    ![image.png](../images/2/2.4/image%201.png)    
 3. Verify successful Route Table creation:
     - You should see a success message
     - Your new Route Table will appear in the list    
-    ![image.png](/images/2/2.4/image%202.png)    
+    ![image.png](../images/2/2.4/image%202.png)    
 4. Modify the routes in your Route Table:
     - Select your newly created Route Table
     - Click **Actions** dropdown
     - Select **Edit routes**    
-    ![image.png](/images/2/2.4/image%203.png)    
+    ![image.png](../images/2/2.4/image%203.png)    
 5. Add an Internet route:
     - Click **Add route**
     - For **Destination**, enter **`0.0.0.0/0`** (represents all IPv4 traffic)
     - For **Target**, select **Internet Gateway** and choose **NSM-IGW**
     - Click **Save changes**    
-    ![image.png](/images/2/2.4/image%204.png)    
+    ![image.png](../images/2/2.4/image%204.png)    
 6. Associate the Route Table with your public subnet:
     - Select the **Subnet associations** tab
     - Click **Edit subnet associations**    
-    ![image.png](/images/2/2.4/image%205.png)    
+    ![image.png](../images/2/2.4/image%205.png)    
 7. Select the appropriate subnets:
     - Select the **NSM-Public-Subnet** you created earlier
     - Click **Save associations**    
-    ![image.png](/images/2/2.4/image%206.png)    
+    ![image.png](../images/2/2.4/image%206.png)    
 8. Confirm your subnet associations:
     - Review the associated subnets in the Subnet associations tab
     - The public subnet is now configured to route internet traffic through the Internet Gateway    
-    ![image.png](/images/2/2.4/image%207.png)
+    ![image.png](../images/2/2.4/image%207.png)

@@ -20,28 +20,28 @@ Now that your OpenSearch domain is active, you'll need to verify that you can ac
         ```        
         - Replace `your-key.pem` with the path to your key file
         - Replace `your-opensearch-endpoint` with your OpenSearch domain endpoint (without `https://` and `/_dashboards`) that you copied in previous step            
-            ![image.png](/images/5/5.2/image.png)            
+            ![image.png](../images/5/5.2/image.png)            
         - Replace `your-bastion-host-ip` with your Bastion Host's public IP        
-        ![image.png](/images/5/5.2/image%201.png)        
+        ![image.png](../images/5/5.2/image%201.png)        
     - Keep this terminal window open while you perform the following steps
 
 2. **Access OpenSearch Dashboards**
     - Open your web browser, enter the URL: `https://localhost:9200/_dashboards/`    
-    ![image.png](/images/5/5.2/image%202.png)    
-    ![image.png](/images/5/5.2/image%203.png)    
+    ![image.png](../images/5/5.2/image%202.png)    
+    ![image.png](../images/5/5.2/image%203.png)    
 3. **Verify Your Admin Access**
     - **Explore the OpenSearch Dashboards Interface**
         - After logging in, you should see the OpenSearch Dashboards home page
         - Take a moment to familiarize yourself with the interface
     - **Check Cluster Health**
         - In the left navigation menu, click on **Dev Tools**          
-            ![image.png](/images/5/5.2/image%204.png)            
+            ![image.png](../images/5/5.2/image%204.png)            
         - In the Console, run the following command:            
             ```
             GET _cluster/health
             ```            
         - The response should show the health status of your cluster (ideally "green")            
-            ![image.png](/images/5/5.2/image%205.png)            
+            ![image.png](../images/5/5.2/image%205.png)            
 4. Create the Ingest Pipeline    
     Execute this command in the Dev Tools console to create your parsing pipeline:    
     ```json
@@ -82,7 +82,7 @@ Now that your OpenSearch domain is active, you'll need to verify that you can ac
     - Uses a **Grok processor** to parse the space-delimited VPC Flow Log format
     - Extracts 14 individual fields with appropriate data types
     - Removes the original **message** field after parsing    
-    ![image.png](/images/5/5.2/image%206.png)    
+    ![image.png](../images/5/5.2/image%206.png)    
 5. Test the Pipeline    
     Before applying it to your data, test the pipeline with your sample data:    
     ```json
@@ -98,7 +98,7 @@ Now that your OpenSearch domain is active, you'll need to verify that you can ac
     }
     ```    
     The response should show your data parsed into individual fields:    
-    ![image.png](/images/5/5.2/image%207.png)    
+    ![image.png](../images/5/5.2/image%207.png)    
 6. Apply Pipeline to New Data    
     For **new incoming data**, create an index template that automatically applies the pipeline:    
     ```json
@@ -130,5 +130,5 @@ Now that your OpenSearch domain is active, you'll need to verify that you can ac
       }
     }
     ```    
-    ![image.png](/images/5/5.2/image%208.png)    
+    ![image.png](../images/5/5.2/image%208.png)    
 - Keep this window open while you perform the following steps

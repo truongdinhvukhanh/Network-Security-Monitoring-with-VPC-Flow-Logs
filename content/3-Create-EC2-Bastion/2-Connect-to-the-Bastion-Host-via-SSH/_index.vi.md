@@ -21,7 +21,7 @@ Bước này hướng dẫn cách kết nối an toàn đến host **NSM-Bastion
     - Thay thế `<your-path-to-keypairfile>` bằng đường dẫn thực tế đến tệp `NSM-Key.pem` của bạn
     - `/inheritance:r`: Vô hiệu hóa việc kế thừa quyền từ thư mục cha
     - `/remove:g *S-1-1-0`: Xóa quyền cho nhóm "Everyone"
-    ![image.png](/images/3/3.2/image.png)
+    ![image.png](../images/3/3.2/image.png)
 3. Cấp quyền Đọc & Thực thi cho người dùng hiện tại:
     ```powershell
     icacls "<your-path-to-keypairfile>" /grant:r <YourName>:(RX)
@@ -29,12 +29,12 @@ Bước này hướng dẫn cách kết nối an toàn đến host **NSM-Bastion
     - Thay thế `<YourName>` bằng tên người dùng Windows thực tế của bạn
     - `(RX)`: Viết tắt của Read & Execute (Đọc & Thực thi)
     - Nếu bạn không chắc chắn về tên người dùng của mình, bạn có thể chạy lệnh `whoami` để tìm. Ví dụ, nếu kết quả là `users/aws`, hãy thay thế `<YourName>` bằng `aws`
-    ![image.png](/images/3/3.2/image%201.png)
+    ![image.png](../images/3/3.2/image%201.png)
 4. Kiểm tra các quyền đã gán:
     ```powershell
     icacls "<your-path-to-keypairfile>"
     ```
-    ![image.png](/images/3/3.2/image%202.png)
+    ![image.png](../images/3/3.2/image%202.png)
 5. Kết nối với Bastion Host qua SSH:
     ```powershell
     ssh -i "<your-path-to-keypairfile>" ec2-user@<Public-IP>
@@ -43,5 +43,5 @@ Bước này hướng dẫn cách kết nối an toàn đến host **NSM-Bastion
     - Thay thế `<Public-IP>` bằng địa chỉ IP công cộng của EC2 instance của bạn.
     **Nhắc nhở kết nối lần đầu:**
     Lần đầu tiên bạn kết nối, bạn sẽ được hỏi "Are you sure you want to continue connecting (yes/no/[fingerprint])?". Gõ `yes`
-    ![image.png](/images/3/3.2/image%203.png)
+    ![image.png](../images/3/3.2/image%203.png)
     Bạn đã hoàn thành thành công việc tạo và xác minh Bastion EC2.
