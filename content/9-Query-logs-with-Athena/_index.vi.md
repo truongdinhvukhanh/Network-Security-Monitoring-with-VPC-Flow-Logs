@@ -16,19 +16,19 @@ Trong phần này, bạn sẽ sử dụng **Amazon Athena** để truy vấn cá
     - **Thiết lập lần đầu**: Nếu đây là lần đầu tiên của bạn, hãy nhấp vào **"Explore the query editor"**
     - Nhấp vào tab **Settings** ở trên cùng
     - Nhấp **Manage**
-    ![image.png](../../images/9/image.png)
+    ![image.png](image.png)
     - Nhập vị trí S3: `s3://nsm-flow-logs-YYYYMMDD/athena-results/`
 
     (thay thế **nsm-flow-logs-YYYYMMDD** bằng tên bucket thực tế của bạn)
     - Nhấp **Save**
-    ![image.png](../../images/9/image%201.png)
+    ![image.png](image%201.png)
 2. Tạo Cơ sở dữ liệu
     - Trong **Query Editor** của Athena, chạy lệnh này:
     ```sql
     CREATE DATABASE IF NOT EXISTS vpc_flow_logs_db;
     ```
-    ![image.png](../../images/9/image%202.png)
-    ![image.png](../../images/9/image%203.png)
+    ![image.png](image%202.png)
+    ![image.png](image%203.png)
 
 3. Tạo Bảng VPC Flow Logs
     - Chạy lệnh này
@@ -56,12 +56,12 @@ Trong phần này, bạn sẽ sử dụng **Amazon Athena** để truy vấn cá
       'skip.header.line.count'='0'
     );
     ```
-    ![image.png](../../images/9/image%204.png)
+    ![image.png](image%204.png)
 4. Xác minh việc tạo bảng
     ```sql
     SHOW TABLES;
     ```
-    ![image.png](../../images/9/image%205.png)
+    ![image.png](image%205.png)
 5. Kiểm tra với các truy vấn mẫu
     - Khám phá dữ liệu cơ bản
         ```sql
@@ -70,14 +70,14 @@ Trong phần này, bạn sẽ sử dụng **Amazon Athena** để truy vấn cá
         FROM vpc_flow_logs
         LIMIT 10;
         ```
-    ![image.png](../../images/9/image%206.png)
+    ![image.png](image%206.png)
     - Đếm tổng số bản ghi
         ```sql
         -- Đếm tổng số bản ghi nhật ký luồng
         SELECT COUNT(*) as total_records
         FROM vpc_flow_logs;
         ```
-    ![image.png](../../images/9/image%207.png)
+    ![image.png](image%207.png)
     - Kiểm tra chất lượng dữ liệu
         ```sql
         -- Kiểm tra các hành động khác nhau trong nhật ký của bạn
@@ -87,7 +87,7 @@ Trong phần này, bạn sẽ sử dụng **Amazon Athena** để truy vấn cá
         FROM vpc_flow_logs
         GROUP BY action;
         ```
-    ![image.png](../../images/9/image%208.png)
+    ![image.png](image%208.png)
 6. Các truy vấn ví dụ để phân tích
     - Phân tích lưu lượng SSH (Cổng 22)
         ```sql
@@ -105,7 +105,7 @@ Trong phần này, bạn sẽ sử dụng **Amazon Athena** để truy vấn cá
         ORDER BY windowstart DESC
         LIMIT 20;
         ```
-    ![image.png](../../images/9/image%209.png)
+    ![image.png](image%209.png)
     - Phân tích các kết nối bị từ chối
         ```sql
         -- Phân tích các kết nối bị từ chối
@@ -120,11 +120,11 @@ Trong phần này, bạn sẽ sử dụng **Amazon Athena** để truy vấn cá
         ORDER BY rejected_count DESC
         LIMIT 15;
         ```
-    ![image.png](../../images/9/image%2010.png)
+    ![image.png](image%2010.png)
 7. Xem kết quả truy vấn trong S3
     - Điều hướng đến [https://s3.console.aws.amazon.com/](https://s3.console.aws.amazon.com/)
     - Điều hướng đến bucket: `nsm-flow-logs-YYYY-MM-DD`
-    ![image.png](../../images/9/image%2011.png)
+    ![image.png](image%2011.png)
     - Mở thư mục: `athena-results/`
-    ![image.png](../../images/9/image%2012.png)
-    ![image.png](../../images/9/image%2013.png)
+    ![image.png](image%2012.png)
+    ![image.png](image%2013.png)

@@ -12,21 +12,21 @@
     <title>Xác minh luồng dữ liệu :: Tạo mới tài khoản AWS</title>
 
     
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/nucleus.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/fontawesome-all.min.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hybrid.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/featherlight.min.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/perfect-scrollbar.min.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/auto-complete.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/atom-one-dark-reasonable.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hugo-theme.css?1754234567" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/nucleus.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/fontawesome-all.min.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hybrid.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/featherlight.min.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/perfect-scrollbar.min.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/auto-complete.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/atom-one-dark-reasonable.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hugo-theme.css?1754239822" rel="stylesheet">
     
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme-workshop.css?1754234567" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme-workshop.css?1754239822" rel="stylesheet">
     
     
 
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery-3.3.1.min.js?1754234567"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery-3.3.1.min.js?1754239822"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/lunr.min.js?1754234567"></script>
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/auto-complete.js?1754234567"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/lunr.min.js?1754239822"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/auto-complete.js?1754239822"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/truongdinhvukhanh.github.io\/Network-Security-Monitoring-with-VPC-Flow-Logs\/\/vi";
     
 </script>
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/search.js?1754234567"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/search.js?1754239822"></script>
 
     
   </div>
@@ -919,7 +919,7 @@ Trước khi xác minh luồng dữ liệu, hãy đảm bảo bạn có một s�
 <li>SSH vào Bastion Host của bạn bằng cặp khóa của bạn</li>
 <li>Từ Bastion Host, hãy thử kết nối với các tài nguyên khác trong VPC của bạn</li>
 <li>Chạy một số lệnh mạng cơ bản như <code>ping</code>, <code>curl</code> hoặc <code>wget</code>
-<img alt="image.png" src="../../images/8/8.1/image.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image.png"></li>
 <li>Chờ khoảng 5 - 10 phút</li>
 </ul>
 </li>
@@ -928,16 +928,16 @@ Trước khi xác minh luồng dữ liệu, hãy đảm bảo bạn có một s�
 <ul>
 <li>Điều hướng đến <a href="https://us-east-1.console.aws.amazon.com/firehose"><strong>Amazon Kinesis console</strong></a></li>
 <li>Chọn luồng <strong>NSM-FlowLogs-Firehose</strong> của bạn
-<img alt="image.png" src="../../images/8/8.1/image%201.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%201.png"></li>
 <li>Nhấp vào tab <strong>Monitoring</strong>
-<img alt="image.png" src="../../images/8/8.1/image%202.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%202.png"></li>
 <li>Tìm kiếm:
 <ul>
 <li><strong>Incoming records</strong> (phải lớn hơn 0)</li>
 <li><strong>Incoming bytes</strong> (phải lớn hơn 0)</li>
 <li><strong>S3 delivery success</strong> (phải khớp với số bản ghi đến)</li>
 <li><strong>OpenSearch delivery success</strong> (phải khớp với số bản ghi đến)
-<img alt="image.png" src="../../images/8/8.1/image%203.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%203.png"></li>
 </ul>
 </li>
 </ul>
@@ -952,7 +952,7 @@ Trước khi xác minh luồng dữ liệu, hãy đảm bảo bạn có một s�
 </ul>
 </li>
 <li>Nếu bạn thấy lỗi, hãy kiểm tra nhật ký CloudWatch cho luồng Firehose của bạn
-<img alt="image.png" src="../../images/8/8.1/image%204.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%204.png"></li>
 </ul>
 </li>
 <li>
@@ -960,10 +960,10 @@ Trước khi xác minh luồng dữ liệu, hãy đảm bảo bạn có một s�
 <ul>
 <li>Điều hướng đến <a href="https://us-east-1.console.aws.amazon.com/s3">the AWS S3 Console</a></li>
 <li>Nhấp vào tên S3 bucket của bạn
-<img alt="image.png" src="../../images/8/8.1/image%205.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%205.png"></li>
 <li>Điều hướng qua cấu trúc tiền tố bạn đã cấu hình (ví dụ: <code>flow-logs/year=2025/month=07/day=22/hour=17/</code>)</li>
 <li>Bạn sẽ thấy các tệp có dấu thời gian tương ứng với thời điểm nhật ký luồng của bạn được tạo
-<img alt="image.png" src="../../images/8/8.1/image%206.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%206.png"></li>
 </ul>
 </li>
 <li>
@@ -976,7 +976,7 @@ Trước khi xác minh luồng dữ liệu, hãy đảm bảo bạn có một s�
 </code></pre></li>
 <li>Tìm kiếm các chỉ mục khớp với mẫu chỉ mục bạn đã cấu hình (ví dụ: <code>vpc-flow-logs</code>)</li>
 <li>Xác minh rằng chỉ mục có các tài liệu (cột <strong>docs.count</strong> phải lớn hơn 0)
-<img alt="image.png" src="../../images/8/8.1/image%207.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%207.png"></li>
 </ul>
 </li>
 </ol>
@@ -1405,19 +1405,19 @@ Trước khi xác minh luồng dữ liệu, hãy đảm bảo bạn có một s�
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/clipboard.min.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.min.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.jquery.min.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery.sticky.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/featherlight.min.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/highlight.pack.js?1754234567"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/clipboard.min.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.min.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.jquery.min.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery.sticky.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/featherlight.min.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/highlight.pack.js?1754239822"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/modernizr.custom-3.6.0.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/learn.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/hugo-learn.js?1754234567"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/modernizr.custom-3.6.0.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/learn.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/hugo-learn.js?1754239822"></script>
 
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.css?1754234567" rel="stylesheet" />
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.js?1754234567"></script>
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.css?1754239822" rel="stylesheet" />
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.js?1754239822"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

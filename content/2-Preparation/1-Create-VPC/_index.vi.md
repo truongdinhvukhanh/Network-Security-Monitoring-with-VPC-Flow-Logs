@@ -14,21 +14,21 @@ Tạo một Amazon Virtual Private Cloud (VPC) là bước nền tảng cho lab 
 
 1. Điều hướng đến [AWS Management Console](https://aws.amazon.com/console/)
     - Trong thanh tìm kiếm, tìm và chọn **VPC**
-    ![image.png](../../images/2/2.1/image.png)
+    ![image.png](image.png)
 2. Bắt đầu tạo VPC:
     - Chọn **Your VPCs** từ bảng điều hướng bên trái
     - Nhấp vào nút **Create VPC** ở góc trên bên phải
-    ![image.png](../../images/2/2.1/image%201.png)
+    ![image.png](image%201.png)
 3. Cấu hình cài đặt VPC của bạn:
     - Dưới **Resources to create**, chọn **VPC only**
     - Nhập **Name tag**: `NSM-VPC`
     - Đặt **IPv4 CIDR block**: `10.0.0.0/16`
-    ![image.png](../../images/2/2.1/image%202.png)
+    ![image.png](image%202.png)
 4. Hoàn tất việc tạo VPC:
     - Xem lại cài đặt của bạn
     - Nhấp **Create VPC**
-    ![image.png](../../images/2/2.1/image%203.png)
+    ![image.png](image%203.png)
 5. Xác minh việc tạo VPC thành công:
     - Bạn sẽ thấy một thông báo thành công
     - VPC mới của bạn sẽ xuất hiện trong danh sách VPC
-    ![image.png](../../images/2/2.1/image%204.png)
+    ![image.png](image%204.png)

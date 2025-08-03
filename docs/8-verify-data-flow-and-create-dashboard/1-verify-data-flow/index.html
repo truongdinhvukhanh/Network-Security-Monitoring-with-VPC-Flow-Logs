@@ -12,21 +12,21 @@
     <title>Verify data flow :: Create a new AWS account.</title>
 
     
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/nucleus.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/fontawesome-all.min.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hybrid.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/featherlight.min.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/perfect-scrollbar.min.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/auto-complete.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/atom-one-dark-reasonable.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme.css?1754234567" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hugo-theme.css?1754234567" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/nucleus.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/fontawesome-all.min.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hybrid.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/featherlight.min.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/perfect-scrollbar.min.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/auto-complete.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/atom-one-dark-reasonable.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme.css?1754239822" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hugo-theme.css?1754239822" rel="stylesheet">
     
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme-workshop.css?1754234567" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme-workshop.css?1754239822" rel="stylesheet">
     
     
 
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery-3.3.1.min.js?1754234567"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery-3.3.1.min.js?1754239822"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/lunr.min.js?1754234567"></script>
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/auto-complete.js?1754234567"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/lunr.min.js?1754239822"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/auto-complete.js?1754239822"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/truongdinhvukhanh.github.io\/Network-Security-Monitoring-with-VPC-Flow-Logs\/";
     
 </script>
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/search.js?1754234567"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/search.js?1754239822"></script>
 
     
   </div>
@@ -919,7 +919,7 @@ Before verifying the data flow, ensure you have some network traffic to analyze:
 <li>SSH into your Bastion Host using your key pair</li>
 <li>From the Bastion Host, try connecting to other resources in your VPC</li>
 <li>Run some basic network commands like <code>ping</code>, <code>curl</code>, or <code>wget</code>     <br>
-<img alt="image.png" src="../../images/8/8.1/image.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image.png"></li>
 <li>Wait about 5 - 10 minutes</li>
 </ul>
 </li>
@@ -928,16 +928,16 @@ Before verifying the data flow, ensure you have some network traffic to analyze:
 <ul>
 <li>Navigate to the <a href="https://us-east-1.console.aws.amazon.com/firehose"><strong>Amazon Kinesis console</strong></a></li>
 <li>Select your <strong>NSM-FlowLogs-Firehose</strong> stream     <br>
-<img alt="image.png" src="../../images/8/8.1/image%201.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%201.png"></li>
 <li>Click on the <strong>Monitoring</strong> tab     <br>
-<img alt="image.png" src="../../images/8/8.1/image%202.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%202.png"></li>
 <li>Look for:
 <ul>
 <li><strong>Incoming records</strong> (should be greater than 0)</li>
 <li><strong>Incoming bytes</strong> (should be greater than 0)</li>
 <li><strong>S3 delivery success</strong> (should match incoming records)</li>
 <li><strong>OpenSearch delivery success</strong> (should match incoming records)     <br>
-<img alt="image.png" src="../../images/8/8.1/image%203.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%203.png"></li>
 </ul>
 </li>
 </ul>
@@ -952,7 +952,7 @@ Before verifying the data flow, ensure you have some network traffic to analyze:
 </ul>
 </li>
 <li>If you see errors, check the CloudWatch logs for your Firehose stream     <br>
-<img alt="image.png" src="../../images/8/8.1/image%204.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%204.png"></li>
 </ul>
 </li>
 <li>
@@ -960,10 +960,10 @@ Before verifying the data flow, ensure you have some network traffic to analyze:
 <ul>
 <li>Navigate to <a href="https://us-east-1.console.aws.amazon.com/s3">the AWS S3 Console</a></li>
 <li>Click on your S3 bucket name     <br>
-<img alt="image.png" src="../../images/8/8.1/image%205.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%205.png"></li>
 <li>Navigate through the prefix structure you configured (e.g., <code>flow-logs/year=2025/month=07/day=22/hour=17/</code>)</li>
 <li>You should see files with timestamps corresponding to when your flow logs were generated     <br>
-<img alt="image.png" src="../../images/8/8.1/image%206.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%206.png"></li>
 </ul>
 </li>
 <li>
@@ -976,7 +976,7 @@ Before verifying the data flow, ensure you have some network traffic to analyze:
 </code></pre></li>
 <li>Look for indices that match your configured index pattern (e.g., <code>vpc-flow-logs</code>)</li>
 <li>Verify that the index has documents (the <strong>docs.count</strong> column should be greater than 0) <br>
-<img alt="image.png" src="../../images/8/8.1/image%207.png"></li>
+<img alt="image.png" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/8-verify-data-flow-and-create-dashboard/1-verify-data-flow/image%207.png"></li>
 </ul>
 </li>
 </ol>
@@ -1405,19 +1405,19 @@ Before verifying the data flow, ensure you have some network traffic to analyze:
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/clipboard.min.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.min.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.jquery.min.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery.sticky.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/featherlight.min.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/highlight.pack.js?1754234567"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/clipboard.min.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.min.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.jquery.min.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery.sticky.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/featherlight.min.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/highlight.pack.js?1754239822"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/modernizr.custom-3.6.0.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/learn.js?1754234567"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/hugo-learn.js?1754234567"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/modernizr.custom-3.6.0.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/learn.js?1754239822"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/hugo-learn.js?1754239822"></script>
 
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.css?1754234567" rel="stylesheet" />
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.js?1754234567"></script>
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.css?1754239822" rel="stylesheet" />
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.js?1754239822"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

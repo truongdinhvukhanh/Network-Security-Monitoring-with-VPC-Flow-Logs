@@ -14,7 +14,7 @@ Lab này sẽ hướng dẫn bạn xây dựng một giải pháp giám sát m�
 
 #### Sơ đồ kiến trúc
 
-![Architecture Diagram](../../images/Simple.drawio.png)
+![Architecture Diagram](Simple.drawio.png)
 
 Sơ đồ trên minh họa kiến trúc chúng ta sẽ triển khai:
 

@@ -20,28 +20,28 @@ Bây giờ OpenSearch domain của bạn đã hoạt động, bạn cần xác m
         ```
         - Thay thế `your-key.pem` bằng đường dẫn đến tệp khóa của bạn
         - Thay thế `your-opensearch-endpoint` bằng endpoint OpenSearch domain của bạn (không bao gồm `https://` và `/_dashboards`) mà bạn đã sao chép ở bước trước
-        ![image.png](../../images/5/5.2/image.png)
+        ![image.png](image.png)
         - Thay thế `your-bastion-host-ip` bằng IP công cộng của Bastion Host của bạn
-        ![image.png](../../images/5/5.2/image%201.png)
+        ![image.png](image%201.png)
     - Giữ cửa sổ terminal này mở trong khi bạn thực hiện các bước sau
 
 2. **Truy cập OpenSearch Dashboards**
     - Mở trình duyệt web của bạn, nhập URL: `https://localhost:9200/_dashboards/`
-    ![image.png](../../images/5/5.2/image%202.png)
-    ![image.png](../../images/5/5.2/image%203.png)
+    ![image.png](image%202.png)
+    ![image.png](image%203.png)
 3. **Xác minh quyền truy cập quản trị của bạn**
     - **Khám phá giao diện OpenSearch Dashboards**
         - Sau khi đăng nhập, bạn sẽ thấy trang chủ OpenSearch Dashboards
         - Dành chút thời gian để làm quen với giao diện
     - **Kiểm tra tình trạng Cluster**
         - Trong menu điều hướng bên trái, nhấp vào **Dev Tools**
-        ![image.png](../../images/5/5.2/image%204.png)
+        ![image.png](image%204.png)
         - Trong Console, chạy lệnh sau:
             ```
             GET _cluster/health
             ```
         - Phản hồi sẽ hiển thị trạng thái sức khỏe của cluster của bạn (lý tưởng là "green")
-        ![image.png](../../images/5/5.2/image%205.png)
+        ![image.png](image%205.png)
 4. Tạo Ingest Pipeline
     Thực hiện lệnh này trong console Dev Tools để tạo pipeline phân tích cú pháp của bạn:
     ```json
@@ -82,7 +82,7 @@ Bây giờ OpenSearch domain của bạn đã hoạt động, bạn cần xác m
     - Sử dụng một **Grok processor** để phân tích cú pháp định dạng VPC Flow Log được phân tách bằng dấu cách
     - Trích xuất 14 trường riêng lẻ với các kiểu dữ liệu phù hợp
     - Xóa trường **message** gốc sau khi phân tích cú pháp
-    ![image.png](../../images/5/5.2/image%206.png)
+    ![image.png](image%206.png)
 5. Kiểm tra Pipeline
     Trước khi áp dụng nó cho dữ liệu của bạn, hãy kiểm tra pipeline với dữ liệu mẫu của bạn:
     ```json
@@ -98,7 +98,7 @@ Bây giờ OpenSearch domain của bạn đã hoạt động, bạn cần xác m
     }
     ```
     Phản hồi sẽ hiển thị dữ liệu của bạn được phân tích thành các trường riêng lẻ:
-    ![image.png](../../images/5/5.2/image%207.png)
+    ![image.png](image%207.png)
 6. Áp dụng Pipeline cho Dữ liệu mới
     Đối với **dữ liệu mới đến**, hãy tạo một index template tự động áp dụng pipeline:
     ```json
@@ -130,5 +130,5 @@ Bây giờ OpenSearch domain của bạn đã hoạt động, bạn cần xác m
       }
     }
     ```
-    ![image.png](../../images/5/5.2/image%208.png)
+    ![image.png](image%208.png)
 - Giữ cửa sổ này mở trong khi bạn thực hiện các bước tiếp theo

@@ -13,18 +13,18 @@ Trong phần này, bạn sẽ cấu hình **VPC Flow Logs** để thu thập th�
 #### Tạo VPC Flow Log để Giám sát Mạng
 1. Điều hướng đến [AWS Management Console](https://aws.amazon.com/console/)
     - Trong thanh tìm kiếm, tìm và chọn **VPC**
-    ![image.png](../../images/7/image.png)
+    ![image.png](image.png)
 2. Tạo flow log
     - Chọn **NSM-VPC** của bạn
     - Chọn tab **Flow logs**
     - Nhấp **Create flow log**
-    ![image.png](../../images/7/image%201.png)
+    ![image.png](image%201.png)
 3. Cấu hình flow log:
     - **Filter**: All (thu thập tất cả lưu lượng truy cập)
     - **Maximum aggregation interval:** 1 minute
     - **Destination**: Send to Amazon Data Firehose in the same account
     - **Firehose delivery stream:** Chọn **NSM-FlowLogs-Firehose** từ danh sách thả xuống
     - **Log format:** AWS default format
-    ![image.png](../../images/7/image%202.png)
+    ![image.png](image%202.png)
 4. Nhấp **Create flow log**
-    ![image.png](../../images/7/image%203.png)
+    ![image.png](image%203.png)
