@@ -12,21 +12,21 @@
     <title>Create the Ingest Pipeline :: Create a new AWS account.</title>
 
     
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/nucleus.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/fontawesome-all.min.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hybrid.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/featherlight.min.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/perfect-scrollbar.min.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/auto-complete.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/atom-one-dark-reasonable.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hugo-theme.css?1754223100" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/nucleus.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/fontawesome-all.min.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hybrid.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/featherlight.min.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/perfect-scrollbar.min.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/auto-complete.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/atom-one-dark-reasonable.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hugo-theme.css?1754223391" rel="stylesheet">
     
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme-workshop.css?1754223100" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme-workshop.css?1754223391" rel="stylesheet">
     
     
 
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery-3.3.1.min.js?1754223100"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery-3.3.1.min.js?1754223391"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/lunr.min.js?1754223100"></script>
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/auto-complete.js?1754223100"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/lunr.min.js?1754223391"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/auto-complete.js?1754223391"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/truongdinhvukhanh.github.io\/Network-Security-Monitoring-with-VPC-Flow-Logs\/";
     
 </script>
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/search.js?1754223100"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/search.js?1754223391"></script>
 
     
   </div>
@@ -922,9 +922,9 @@
 </span></span></code></pre></div><ul>
 <li>Replace <code>your-key.pem</code> with the path to your key file</li>
 <li>Replace <code>your-opensearch-endpoint</code> with your OpenSearch domain endpoint (without <code>https://</code> and <code>/_dashboards</code>) that you copied in previous step         <br>
-<img alt="image.png" src="../images/5/5.2/image.png"></li>
+<img alt="image.png" src="../../images/5/5.2/image.png"></li>
 <li>Replace <code>your-bastion-host-ip</code> with your Bastion Host&rsquo;s public IP     <br>
-<img alt="image.png" src="../images/5/5.2/image%201.png"></li>
+<img alt="image.png" src="../../images/5/5.2/image%201.png"></li>
 </ul>
 </li>
 <li>Keep this terminal window open while you perform the following steps</li>
@@ -934,8 +934,8 @@
 <p><strong>Access OpenSearch Dashboards</strong></p>
 <ul>
 <li>Open your web browser, enter the URL: <code>https://localhost:9200/_dashboards/</code> <br>
-<img alt="image.png" src="../images/5/5.2/image%202.png"> <br>
-<img alt="image.png" src="../images/5/5.2/image%203.png"></li>
+<img alt="image.png" src="../../images/5/5.2/image%202.png"> <br>
+<img alt="image.png" src="../../images/5/5.2/image%203.png"></li>
 </ul>
 </li>
 <li>
@@ -950,12 +950,12 @@
 <li><strong>Check Cluster Health</strong>
 <ul>
 <li>In the left navigation menu, click on <strong>Dev Tools</strong>       <br>
-<img alt="image.png" src="../images/5/5.2/image%204.png"></li>
+<img alt="image.png" src="../../images/5/5.2/image%204.png"></li>
 <li>In the Console, run the following command:
 <pre tabindex="0"><code>GET _cluster/health
 </code></pre></li>
 <li>The response should show the health status of your cluster (ideally &ldquo;green&rdquo;)         <br>
-<img alt="image.png" src="../images/5/5.2/image%205.png"></li>
+<img alt="image.png" src="../../images/5/5.2/image%205.png"></li>
 </ul>
 </li>
 </ul>
@@ -1000,7 +1000,7 @@ Execute this command in the Dev Tools console to create your parsing pipeline:</
 <li>Uses a <strong>Grok processor</strong> to parse the space-delimited VPC Flow Log format</li>
 <li>Extracts 14 individual fields with appropriate data types</li>
 <li>Removes the original <strong>message</strong> field after parsing <br>
-<img alt="image.png" src="../images/5/5.2/image%206.png"></li>
+<img alt="image.png" src="../../images/5/5.2/image%206.png"></li>
 </ul>
 </li>
 <li>
@@ -1017,7 +1017,7 @@ Before applying it to your data, test the pipeline with your sample data:</p>
 </span></span><span style="display:flex;"><span>  ]
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The response should show your data parsed into individual fields: <br>
-<img alt="image.png" src="../images/5/5.2/image%207.png"></p>
+<img alt="image.png" src="../../images/5/5.2/image%207.png"></p>
 </li>
 <li>
 <p>Apply Pipeline to New Data <br>
@@ -1049,7 +1049,7 @@ For <strong>new incoming data</strong>, create an index template that automatic
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><img alt="image.png" src="../images/5/5.2/image%208.png"></p>
+</span></span></code></pre></div><p><img alt="image.png" src="../../images/5/5.2/image%208.png"></p>
 </li>
 </ol>
 <ul>
@@ -1483,19 +1483,19 @@ For <strong>new incoming data</strong>, create an index template that automatic
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/clipboard.min.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.min.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.jquery.min.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery.sticky.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/featherlight.min.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/highlight.pack.js?1754223100"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/clipboard.min.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.min.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.jquery.min.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery.sticky.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/featherlight.min.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/highlight.pack.js?1754223391"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/modernizr.custom-3.6.0.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/learn.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/hugo-learn.js?1754223100"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/modernizr.custom-3.6.0.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/learn.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/hugo-learn.js?1754223391"></script>
 
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.css?1754223100" rel="stylesheet" />
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.js?1754223100"></script>
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.css?1754223391" rel="stylesheet" />
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.js?1754223391"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

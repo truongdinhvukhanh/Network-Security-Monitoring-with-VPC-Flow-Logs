@@ -14,11 +14,11 @@ Trong lab này, việc tạo một IAM Policy (**NSM-Firehose-Policy**) và mộ
 1. Điều hướng đến **IAM Console**:
     - Điều hướng đến [AWS Management Console](https://aws.amazon.com/console/)
     - Tìm kiếm và chọn **IAM** trong thanh tìm kiếm dịch vụ
-    ![image.png](../images/2/2.6/image.png)
+    ![image.png](../../images/2/2.6/image.png)
 2. Bắt đầu tạo policy:
     - Điều hướng đến **Policies** trong ngăn điều hướng bên trái
     - Nhấp **Create policy**
-    ![image.png](../images/2/2.6/image%201.png)
+    ![image.png](../../images/2/2.6/image%201.png)
 3. Chỉ định quyền:
     - Chọn tab **JSON**
     - Dán **JSON** sau vào tab **JSON**
@@ -81,43 +81,43 @@ Trong lab này, việc tạo một IAM Policy (**NSM-Firehose-Policy**) và mộ
             ]
         }
         ```
-    ![image.png](../images/2/2.6/image%202.png)
+    ![image.png](../../images/2/2.6/image%202.png)
     - Nhấp **Next**:
-    ![image.png](../images/2/2.6/image%203.png)
+    ![image.png](../../images/2/2.6/image%203.png)
 4. Cấu hình chi tiết policy:
     - **Policy name:** Nhập `NSM-Firehose-Policy`
-    ![image.png](../images/2/2.6/image%204.png)
+    ![image.png](../../images/2/2.6/image%204.png)
 5. Xem lại và tạo
     - Nhấp **Create policy**
-    ![image.png](../images/2/2.6/image%205.png)
+    ![image.png](../../images/2/2.6/image%205.png)
 6. Xác minh việc tạo thành công:
     - Bạn sẽ thấy một thông báo thành công
     - Security group mới của bạn sẽ được thêm vào danh sách
-    ![image.png](../images/2/2.6/image%206.png)
+    ![image.png](../../images/2/2.6/image%206.png)
 #### Tạo IAM Firehose Roles
 1. Tạo một role mới:
     - Trong ngăn điều hướng bên trái, chọn **Roles**
     - Nhấp **Create role**
-    ![image.png](../images/2/2.6/image%207.png)
+    ![image.png](../../images/2/2.6/image%207.png)
 2. Chọn thực thể đáng tin cậy:
     - **Trusted entity type:** Chọn **AWS service**
     - **Use case:** Tìm kiếm và chọn `Firehose`
     - Nhấp **Next**
-    ![image.png](../images/2/2.6/image%208.png)
+    ![image.png](../../images/2/2.6/image%208.png)
 3. Thêm quyền:
     - Tìm kiếm và chọn Policy tùy chỉnh của bạn: `NSM-Firehose-Policy`
     - Nhấp **Next**
-    ![image.png](../images/2/2.6/image%209.png)
+    ![image.png](../../images/2/2.6/image%209.png)
 4. Cấu hình chi tiết role:
     - **Role name:** Nhập `NSM-Firehose-Role`
     - **Description:** Nhập `Allows Firehose to deliver data to OpenSearch and S3`
     - Xem lại trust policy và quyền
-    ![image.png](../images/2/2.6/image%2010.png)
+    ![image.png](../../images/2/2.6/image%2010.png)
 5. Xem lại và tạo:
     - Xác minh tất cả các cấu hình là chính xác
     - Nhấp **Create role**
-    ![image.png](../images/2/2.6/image%2011.png)
+    ![image.png](../../images/2/2.6/image%2011.png)
 6. Xác nhận việc tạo role:
     - Bạn sẽ thấy một thông báo thành công
     - Role hiện đã sẵn sàng để sử dụng
-    ![image.png](../images/2/2.6/image%2012.png)
+    ![image.png](../../images/2/2.6/image%2012.png)

@@ -14,11 +14,11 @@ In this lab, creating a dedicated IAM Policy (**NSM-Firehose-Policy**) and an IA
 1. Navigate to the **IAM Console**:
     - Navigate to the [AWS Management Console](https://aws.amazon.com/console/)
     - Search for and select **IAM** in the services search bar    
-    ![image.png](../images/2/2.6/image.png)    
+    ![image.png](../../images/2/2.6/image.png)    
 2. Initiate policy creation:
     - Navigate to **Policies** in the left navigation pane
     - Click **Create policy**    
-    ![image.png](../images/2/2.6/image%201.png)    
+    ![image.png](../../images/2/2.6/image%201.png)    
 3. Specify permissions:
     - Select the **JSON** tab
     - Paste the following **JSON** into the **JSON tab**        
@@ -81,43 +81,43 @@ In this lab, creating a dedicated IAM Policy (**NSM-Firehose-Policy**) and an IA
             ]
         }
         ```    
-    ![image.png](../images/2/2.6/image%202.png)    
+    ![image.png](../../images/2/2.6/image%202.png)    
     - Click **Next**:    
-    ![image.png](../images/2/2.6/image%203.png)    
+    ![image.png](../../images/2/2.6/image%203.png)    
 4. Configure policy details:
     - **Policy name:** Enter `NSM-Firehose-Policy`    
-    ![image.png](../images/2/2.6/image%204.png)    
+    ![image.png](../../images/2/2.6/image%204.png)    
 5. Review and create
     - Click **Create policy**    
-    ![image.png](../images/2/2.6/image%205.png)    
+    ![image.png](../../images/2/2.6/image%205.png)    
 6. Verify successful creation:
     - You should see a success message
     - Your new security group will be added in the list    
-    ![image.png](../images/2/2.6/image%206.png)
+    ![image.png](../../images/2/2.6/image%206.png)
 #### Create IAM Firehose Roles
 1. Create a new role:
     - In the left navigation pane, select **Roles**
     - Click **Create role**    
-    ![image.png](../images/2/2.6/image%207.png)    
+    ![image.png](../../images/2/2.6/image%207.png)    
 2. Select the trusted entity:
     - **Trusted entity type:** Choose **AWS service**
     - **Use case:** Search for and select `Firehose`
     - Click **Next**    
-    ![image.png](../images/2/2.6/image%208.png)    
+    ![image.png](../../images/2/2.6/image%208.png)    
 3. Add permissions:
     - Search for and select your custom Policy: `NSM-Firehose-Policy`
     - Click **Next**
-    ![image.png](../images/2/2.6/image%209.png)
+    ![image.png](../../images/2/2.6/image%209.png)
 4. Configure role details:
     - **Role name:** Enter `NSM-Firehose-Role`
     - **Description:** Enter `Allows Firehose to deliver data to OpenSearch and S3`
     - Review the trust policy and permissions    
-    ![image.png](../images/2/2.6/image%2010.png)
+    ![image.png](../../images/2/2.6/image%2010.png)
 5. Review and create:
     - Verify all configurations are correct
     - Click **Create role**    
-    ![image.png](../images/2/2.6/image%2011.png)    
+    ![image.png](../../images/2/2.6/image%2011.png)    
 6. Confirm role creation:
     - You should see a success message
     - The role is now ready for use    
-    ![image.png](../images/2/2.6/image%2012.png)
+    ![image.png](../../images/2/2.6/image%2012.png)

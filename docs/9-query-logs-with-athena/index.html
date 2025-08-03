@@ -12,21 +12,21 @@
     <title>Query logs with Athena :: Create a new AWS account.</title>
 
     
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/nucleus.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/fontawesome-all.min.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hybrid.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/featherlight.min.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/perfect-scrollbar.min.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/auto-complete.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/atom-one-dark-reasonable.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme.css?1754223100" rel="stylesheet">
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hugo-theme.css?1754223100" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/nucleus.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/fontawesome-all.min.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hybrid.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/featherlight.min.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/perfect-scrollbar.min.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/auto-complete.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/atom-one-dark-reasonable.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme.css?1754223391" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/hugo-theme.css?1754223391" rel="stylesheet">
     
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme-workshop.css?1754223100" rel="stylesheet">
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/css/theme-workshop.css?1754223391" rel="stylesheet">
     
     
 
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery-3.3.1.min.js?1754223100"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery-3.3.1.min.js?1754223391"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/lunr.min.js?1754223100"></script>
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/auto-complete.js?1754223100"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/lunr.min.js?1754223391"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/auto-complete.js?1754223391"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/truongdinhvukhanh.github.io\/Network-Security-Monitoring-with-VPC-Flow-Logs\/";
     
 </script>
-<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/search.js?1754223100"></script>
+<script type="text/javascript" src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/search.js?1754223391"></script>
 
     
   </div>
@@ -920,7 +920,7 @@
 </li>
 <li>
 <p>Click <strong>Manage</strong>     <br>
-<img alt="image.png" src="../images/9/image.png"></p>
+<img alt="image.png" src="../../images/9/image.png"></p>
 </li>
 <li>
 <p>Enter S3 location: <code>s3://nsm-flow-logs-YYYYMMDD/athena-results/</code></p>
@@ -928,7 +928,7 @@
 </li>
 <li>
 <p>Click <strong>Save</strong>     <br>
-<img alt="image.png" src="../images/9/image%201.png"></p>
+<img alt="image.png" src="../../images/9/image%201.png"></p>
 </li>
 </ul>
 </li>
@@ -938,8 +938,8 @@
 <li>In the Athena <strong>Query Editor</strong>, run this command:</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">EXISTS</span> vpc_flow_logs_db;
-</span></span></code></pre></div><p><img alt="image.png" src="../images/9/image%202.png"> <br>
-<img alt="image.png" src="../images/9/image%203.png"></p>
+</span></span></code></pre></div><p><img alt="image.png" src="../../images/9/image%202.png"> <br>
+<img alt="image.png" src="../../images/9/image%203.png"></p>
 </li>
 <li>
 <p>Create VPC Flow Logs Table</p>
@@ -968,12 +968,12 @@
 </span></span><span style="display:flex;"><span>TBLPROPERTIES (
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;skip.header.line.count&#39;</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;0&#39;</span>
 </span></span><span style="display:flex;"><span>);
-</span></span></code></pre></div><p><img alt="image.png" src="../images/9/image%204.png"></p>
+</span></span></code></pre></div><p><img alt="image.png" src="../../images/9/image%204.png"></p>
 </li>
 <li>
 <p>Verify Table Creation</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SHOW</span> TABLES;
-</span></span></code></pre></div><p><img alt="image.png" src="../images/9/image%205.png"></p>
+</span></span></code></pre></div><p><img alt="image.png" src="../../images/9/image%205.png"></p>
 </li>
 <li>
 <p>Test with Sample Queries</p>
@@ -983,12 +983,12 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> vpc_flow_logs
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">10</span>;
-</span></span></code></pre></div><img alt="image.png" src="../images/9/image%206.png"></li>
+</span></span></code></pre></div><img alt="image.png" src="../../images/9/image%206.png"></li>
 <li>Count Total Records
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">-- Count total flow log records
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">as</span> total_records
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> vpc_flow_logs;
-</span></span></code></pre></div><img alt="image.png" src="../images/9/image%207.png"></li>
+</span></span></code></pre></div><img alt="image.png" src="../../images/9/image%207.png"></li>
 <li>Data Quality Check
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">-- Check for different actions in your logs
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">SELECT</span> 
@@ -996,7 +996,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">count</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> vpc_flow_logs
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> action;
-</span></span></code></pre></div><img alt="image.png" src="../images/9/image%208.png"></li>
+</span></span></code></pre></div><img alt="image.png" src="../../images/9/image%208.png"></li>
 </ul>
 </li>
 <li>
@@ -1016,7 +1016,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> dstport <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> windowstart <span style="color:#66d9ef">DESC</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">20</span>;
-</span></span></code></pre></div><img alt="image.png" src="../images/9/image%209.png"></li>
+</span></span></code></pre></div><img alt="image.png" src="../../images/9/image%209.png"></li>
 <li>Rejected Connections Analysis
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">-- Analyze rejected connections
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">SELECT</span> 
@@ -1029,7 +1029,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> srcaddr, dstaddr, dstport
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> rejected_count <span style="color:#66d9ef">DESC</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">15</span>;
-</span></span></code></pre></div><img alt="image.png" src="../images/9/image%2010.png"></li>
+</span></span></code></pre></div><img alt="image.png" src="../../images/9/image%2010.png"></li>
 </ul>
 </li>
 <li>
@@ -1037,10 +1037,10 @@
 <ul>
 <li>Navigate to <a href="https://s3.console.aws.amazon.com/">https://s3.console.aws.amazon.com/</a></li>
 <li>Navigate to bucket: <code>nsm-flow-logs-YYYY-MM-DD</code>     <br>
-<img alt="image.png" src="../images/9/image%2011.png"></li>
+<img alt="image.png" src="../../images/9/image%2011.png"></li>
 <li>Open folder: <code>athena-results/</code>     <br>
-<img alt="image.png" src="../images/9/image%2012.png">     <br>
-<img alt="image.png" src="../images/9/image%2013.png"></li>
+<img alt="image.png" src="../../images/9/image%2012.png">     <br>
+<img alt="image.png" src="../../images/9/image%2013.png"></li>
 </ul>
 </li>
 </ol>
@@ -1468,19 +1468,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/clipboard.min.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.min.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.jquery.min.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery.sticky.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/featherlight.min.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/highlight.pack.js?1754223100"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/clipboard.min.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.min.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/perfect-scrollbar.jquery.min.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/jquery.sticky.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/featherlight.min.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/highlight.pack.js?1754223391"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/modernizr.custom-3.6.0.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/learn.js?1754223100"></script>
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/hugo-learn.js?1754223100"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/modernizr.custom-3.6.0.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/learn.js?1754223391"></script>
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/js/hugo-learn.js?1754223391"></script>
 
-    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.css?1754223100" rel="stylesheet" />
-    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.js?1754223100"></script>
+    <link href="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.css?1754223391" rel="stylesheet" />
+    <script src="/Network-Security-Monitoring-with-VPC-Flow-Logs/mermaid/mermaid.js?1754223391"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -16,19 +16,19 @@ In this section, you will utilize Amazon Athena to query the VPC Flow Logs store
     - **First-time setup**: If this is your first time, click **"Explore the query editor"**
     - Click **Settings** tab at the top
     - Click **Manage**        
-        ![image.png](../images/9/image.png)        
+        ![image.png](../../images/9/image.png)        
     - Enter S3 location: `s3://nsm-flow-logs-YYYYMMDD/athena-results/`
     
         (replace **nsm-flow-logs-YYYYMMDD** with your actual bucket name)
     - Click **Save**        
-        ![image.png](../images/9/image%201.png)
+        ![image.png](../../images/9/image%201.png)
 2. Create Database    
     - In the Athena **Query Editor**, run this command:    
     ```sql
     CREATE DATABASE IF NOT EXISTS vpc_flow_logs_db;
     ```    
-    ![image.png](../images/9/image%202.png)    
-    ![image.png](../images/9/image%203.png)    
+    ![image.png](../../images/9/image%202.png)    
+    ![image.png](../../images/9/image%203.png)    
 
 3. Create VPC Flow Logs Table    
     - Run this command    
@@ -56,12 +56,12 @@ In this section, you will utilize Amazon Athena to query the VPC Flow Logs store
       'skip.header.line.count'='0'
     );
     ```    
-    ![image.png](../images/9/image%204.png)    
+    ![image.png](../../images/9/image%204.png)    
 4. Verify Table Creation    
     ```sql
     SHOW TABLES;
     ```    
-    ![image.png](../images/9/image%205.png)    
+    ![image.png](../../images/9/image%205.png)    
 5. Test with Sample Queries
     - Basic Data Exploration        
         ```sql
@@ -70,14 +70,14 @@ In this section, you will utilize Amazon Athena to query the VPC Flow Logs store
         FROM vpc_flow_logs
         LIMIT 10;
         ```        
-        ![image.png](../images/9/image%206.png)        
+        ![image.png](../../images/9/image%206.png)        
     - Count Total Records        
         ```sql
         -- Count total flow log records
         SELECT COUNT(*) as total_records
         FROM vpc_flow_logs;
         ```        
-        ![image.png](../images/9/image%207.png)        
+        ![image.png](../../images/9/image%207.png)        
     - Data Quality Check        
         ```sql
         -- Check for different actions in your logs
@@ -87,7 +87,7 @@ In this section, you will utilize Amazon Athena to query the VPC Flow Logs store
         FROM vpc_flow_logs
         GROUP BY action;
         ```        
-        ![image.png](../images/9/image%208.png)        
+        ![image.png](../../images/9/image%208.png)        
 6. Example Queries for Analysis
     - SSH Traffic Analysis (Port 22)        
         ```sql
@@ -105,7 +105,7 @@ In this section, you will utilize Amazon Athena to query the VPC Flow Logs store
         ORDER BY windowstart DESC
         LIMIT 20;
         ```        
-        ![image.png](../images/9/image%209.png)        
+        ![image.png](../../images/9/image%209.png)        
     - Rejected Connections Analysis        
         ```sql
         -- Analyze rejected connections
@@ -120,11 +120,11 @@ In this section, you will utilize Amazon Athena to query the VPC Flow Logs store
         ORDER BY rejected_count DESC
         LIMIT 15;
         ```        
-        ![image.png](../images/9/image%2010.png)        
+        ![image.png](../../images/9/image%2010.png)        
 7. View Query Results in S3
     - Navigate to [https://s3.console.aws.amazon.com/](https://s3.console.aws.amazon.com/)
     - Navigate to bucket: `nsm-flow-logs-YYYY-MM-DD`        
-        ![image.png](../images/9/image%2011.png)        
+        ![image.png](../../images/9/image%2011.png)        
     - Open folder: `athena-results/`        
-        ![image.png](../images/9/image%2012.png)        
-        ![image.png](../images/9/image%2013.png)
+        ![image.png](../../images/9/image%2012.png)        
+        ![image.png](../../images/9/image%2013.png)

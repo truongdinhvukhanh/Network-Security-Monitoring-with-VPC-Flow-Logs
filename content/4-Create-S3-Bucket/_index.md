@@ -14,32 +14,32 @@ In this section, you will create an Amazon S3 (Simple Storage Service) bucket. T
 1. Sign in to the AWS Management Console
     - In the search bar, type **S3**
     - Select **S3** from the services list    
-    ![image.png](../images/4/image.png)    
+    ![image.png](../../images/4/image.png)    
 2. In the **S3** interface, select **Create bucket**    
-    ![image.png](../images/4/image%201.png)    
+    ![image.png](../../images/4/image%201.png)    
 3. In the **Create bucket** interface
     - **Bucket type:** Select **General purpose**
     - **Bucket name**: Type `nsm-flow-logs-YYYYMMDD` (replace YYYYMMDD with today's date to ensure uniqueness)    
-    ![image.png](../images/4/image%202.png)    
+    ![image.png](../../images/4/image%202.png)    
 4. Click **Create bucket**   
-    ![image.png](../images/4/image%203.png)    
-    ![image.png](../images/4/image%204.png)  
+    ![image.png](../../images/4/image%203.png)    
+    ![image.png](../../images/4/image%204.png)  
 #### Create Folder Structure for Organized Data Storage
 1. Select your newly created bucket    
-    ![image.png](../images/4/image%205.png)    
+    ![image.png](../../images/4/image%205.png)    
 2. Scroll down and click **Create folder**   
-    ![image.png](../images/4/image%206.png)    
+    ![image.png](../../images/4/image%206.png)    
 3. Create the following folders:
     - `flow-logs` (for VPC Flow Logs data)       
-        ![image.png](../images/4/image%207.png)        
+        ![image.png](../../images/4/image%207.png)        
     - `athena-results` (for storing Athena query results)        
-        ![image.png](../images/4/image%208.png)        
+        ![image.png](../../images/4/image%208.png)        
 4. Verify two foders was created successfully    
-    ![image.png](../images/4/image%209.png)  
+    ![image.png](../../images/4/image%209.png)  
 #### Configure Bucket Policy for Firehose Access
 1. Go to the **Permissions** tab
 2. Scroll down to **Bucket policy** and click **Edit**
-    ![image.png](../images/4/image%2010.png)    
+    ![image.png](../../images/4/image%2010.png)    
 3. Copy and paste the following policy, replacing the placeholders:    
     ```json
     {
@@ -99,6 +99,6 @@ In this section, you will create an Amazon S3 (Simple Storage Service) bucket. T
     - `nsm-flow-logs-YYYYMMDD` with your actual bucket name (4 places)
     - `YOUR-ACCOUNT-ID` with your AWS account ID (found in the top-right corner of the AWS console)
     - Ensure the region matches your setup (us-east-1 in this example)    
-    ![image.png](../images/4/image%2011.png)    
+    ![image.png](../../images/4/image%2011.png)    
 4. Click **Save changes** 
-    ![image.png](../images/4/image%2012.png)
+    ![image.png](../../images/4/image%2012.png)
