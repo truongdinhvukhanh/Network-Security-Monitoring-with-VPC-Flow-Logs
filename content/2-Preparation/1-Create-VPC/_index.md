@@ -14,21 +14,21 @@ Creating an Amazon Virtual Private Cloud (VPC) is the foundational step for this
 
 1. Navigate to the [AWS Management Console](https://aws.amazon.com/console/)
     - In the search bar, find and select **VPC**
-    ![image.png](https://github.com/truongdinhvukhanh/Network-Security-Monitoring-with-VPC-Flow-Logs/blob/f310c8e03d453f0bfedbec2048a4d72ccf97c9c3/static/images/2/2.1/image.png?raw=true)
+    ![image.png](image.png)
 2. Initiate VPC creation:
     - Select **Your VPCs** from the left navigation panel
     - Click on **Create VPC** button in the top-right corner
-    ![image.png](https://github.com/truongdinhvukhanh/Network-Security-Monitoring-with-VPC-Flow-Logs/blob/main/static/images/2/2.1/image%201.png?raw=true)
+    ![image.png](image 1.png)
 3. Configure your VPC settings:
     - Under **Resources to create**, select **VPC only**
     - Enter **Name tag**:  `NSM-VPC`
     - Set **IPv4 CIDR block**: `10.0.0.0/16`
-    ![image.png](https://github.com/truongdinhvukhanh/Network-Security-Monitoring-with-VPC-Flow-Logs/blob/main/static/images/2/2.1/image%202.png?raw=true)
+    ![image.png](image 2.png)
 4. Complete the VPC creation:
     - Review your settings
     - Click **Create VPC**
-    ![image.png](https://github.com/truongdinhvukhanh/Network-Security-Monitoring-with-VPC-Flow-Logs/blob/main/static/images/2/2.1/image%203.png?raw=true)
+    ![image.png](image 3.png)
 5. Verify successful VPC creation:
     - You should see a success message
     - Your new VPC will appear in the VPC list
-    ![image.png](https://github.com/truongdinhvukhanh/Network-Security-Monitoring-with-VPC-Flow-Logs/blob/main/static/images/2/2.1/image%204.png?raw=true)
+    ![image.png](image 4.png)
