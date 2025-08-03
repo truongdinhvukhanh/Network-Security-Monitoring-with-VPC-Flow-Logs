@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Khởi chạy EC2 Instance làm Bastion Host on Tạo mới tài khoản AWS</title><link>https://truongdinhvukhanh.github.io/Network-Security-Monitoring-with-VPC-Flow-Logs/vi/3-create-ec2-bastion/1-launch-an-ec2-instance-as-a-bastion-host/</link><description>Recent content in Khởi chạy EC2 Instance làm Bastion Host on Tạo mới tài khoản AWS</description><generator>Hugo</generator><language>vi</language><atom:link href="https://truongdinhvukhanh.github.io/Network-Security-Monitoring-with-VPC-Flow-Logs/vi/3-create-ec2-bastion/1-launch-an-ec2-instance-as-a-bastion-host/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Khởi chạy EC2 Instance làm Bastion Host on Tạo mới tài khoản AWS</title>
+    <link>https://truongdinhvukhanh.github.io/Network-Security-Monitoring-with-VPC-Flow-Logs/vi/3-create-ec2-bastion/1-launch-an-ec2-instance-as-a-bastion-host/</link>
+    <description>Recent content in Khởi chạy EC2 Instance làm Bastion Host on Tạo mới tài khoản AWS</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="https://truongdinhvukhanh.github.io/Network-Security-Monitoring-with-VPC-Flow-Logs/vi/3-create-ec2-bastion/1-launch-an-ec2-instance-as-a-bastion-host/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
