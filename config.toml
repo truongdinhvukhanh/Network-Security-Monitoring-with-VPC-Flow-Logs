@@ -1,7 +1,10 @@
-# Change the default theme to be use when building the site with Hugo
-theme = "hugo-theme-learn"
 baseURL = "https://truongdinhvukhanh.github.io/Network-Security-Monitoring-with-VPC-Flow-Logs/"
 publishDir = "docs"
+languageCode = "en-us"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
+
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
