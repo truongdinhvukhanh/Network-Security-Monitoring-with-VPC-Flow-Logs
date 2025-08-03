@@ -14,7 +14,7 @@ This lab guides you through building a comprehensive network monitoring solution
 
 #### Architecture Diagram
 
-![Architecture Diagram](../../images/Simple.drawio.png)
+![Architecture Diagram](/images/Simple.drawio.png)
 
 The diagram above illustrates the architecture we will implement:
 
