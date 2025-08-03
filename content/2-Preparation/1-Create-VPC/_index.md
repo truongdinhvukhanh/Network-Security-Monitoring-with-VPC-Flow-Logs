@@ -14,7 +14,7 @@ Creating an Amazon Virtual Private Cloud (VPC) is the foundational step for this
 
 1. Navigate to the [AWS Management Console](https://aws.amazon.com/console/)
     - In the search bar, find and select **VPC**
-    ![image.png](/images/2/2.1/image.png)
+    ![image.png](/static/images/2/2.1/image.png)
 2. Initiate VPC creation:
     - Select **Your VPCs** from the left navigation panel
     - Click on **Create VPC** button in the top-right corner
